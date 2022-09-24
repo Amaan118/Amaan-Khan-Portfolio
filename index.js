@@ -10,9 +10,7 @@ const routes = require("./routes/routes");
 const app = express();
 
 const publicPath = path.join(__dirname, "public");
-const viewPath = path.join(__dirname, 'views');
 app.use(express.static(publicPath));
-app.set('views', viewPath);
 
 app.set('view engine', 'html');
 app.engine('html', ejs.renderFile);

@@ -15,12 +15,12 @@ const transport = nodemailer.createTransport({
 
 
 router.get("/", (req, res) => {
-    res.status(200).render("index.html");
+    res.status(200).render("../index.html");
 });
 
 
 router.get("/home", (req, res) => {
-    res.status(200).render("index.html");
+    res.status(200).render("../index.html");
 });
 
 
